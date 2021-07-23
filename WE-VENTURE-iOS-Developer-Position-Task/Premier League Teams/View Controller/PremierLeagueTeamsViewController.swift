@@ -69,6 +69,10 @@ extension PremierLeagueTeamsViewController: UICollectionViewDataSource, UICollec
         return collectionViewCell
     }
 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.navigationController?.pushViewController(UIViewController(), animated: true)
+    }
+
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
