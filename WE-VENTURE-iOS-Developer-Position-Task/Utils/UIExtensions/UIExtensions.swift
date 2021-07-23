@@ -21,6 +21,18 @@ extension UICollectionViewCell {
 
 }
 
+extension UITableViewCell {
+
+    static var nib: UINib {
+        return UINib(nibName: Self.identifier, bundle: nil)
+    }
+
+    static var identifier : String {
+        return String(describing: self)
+    }
+
+}
+
 extension UIImageView {
 
     func loadImage(url: URL) {

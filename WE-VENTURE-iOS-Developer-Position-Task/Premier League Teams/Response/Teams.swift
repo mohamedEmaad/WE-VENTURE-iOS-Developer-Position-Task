@@ -16,5 +16,6 @@ struct Team: Codable {
 	let clubColors: String?
 	let venue: String?
 	let lastUpdated: String?
-    
+    let squad: [Squad]?
+
 }

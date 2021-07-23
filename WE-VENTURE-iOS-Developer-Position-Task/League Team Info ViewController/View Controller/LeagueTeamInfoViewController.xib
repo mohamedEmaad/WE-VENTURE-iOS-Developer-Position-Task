@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="loadingIndicator" destination="2dn-cu-UlK" id="ydU-QO-mjC"/>
                 <outlet property="squadTableView" destination="KYi-pW-7cm" id="9J2-Wf-AA9"/>
+                <outlet property="squadTableViewHeight" destination="sdN-yH-pKp" id="cvF-Fa-3MU"/>
                 <outlet property="teamFlagImageView" destination="YzZ-ci-vpF" id="jRP-uu-CXH"/>
                 <outlet property="teamLinkButton" destination="0TP-P5-YOm" id="4JD-5r-i9x"/>
                 <outlet property="teamNameLabel" destination="3wO-6r-ApE" id="xfK-xo-ia8"/>
@@ -57,6 +58,9 @@
                                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KYi-pW-7cm">
                                     <rect key="frame" x="0.0" y="187.5" width="414" height="630.5"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="630.5" id="sdN-yH-pKp"/>
+                                    </constraints>
                                 </tableView>
                                 <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="2dn-cu-UlK">
                                     <rect key="frame" x="197" y="444" width="20" height="20"/>
@@ -90,7 +94,6 @@
                 <constraint firstItem="1FJ-oL-IOI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0dZ-An-FA8"/>
                 <constraint firstItem="bFi-Ek-392" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="1eh-hM-pdS"/>
                 <constraint firstItem="1FJ-oL-IOI" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="kzP-at-71R"/>
-                <constraint firstItem="bFi-Ek-392" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.912946" priority="750" id="n6z-vi-1OK"/>
                 <constraint firstItem="1FJ-oL-IOI" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="nTU-bT-2ph"/>
                 <constraint firstItem="1FJ-oL-IOI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ur1-aV-AXF"/>
             </constraints>

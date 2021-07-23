@@ -48,5 +48,37 @@ final class PremierLeagueRepository {
             }
         }
     }
+
+    func getLeagueTeamInfo(url: URL, completion: @escaping (Result<Team, Error>) -> Void) {
+        self.fetcher.execute(url: url, requestType: .get, body: nil) { (data, _, error) in
+            if let error = error {
+                DispatchQueue.main.async {
+                    completion(.failure(error))
+                }
+
+                return
+            }
+
+            guard let data = data else {
+                DispatchQueue.main.async {
+                    completion(.failure(MainError.responseError(message: "ReturnedData:Nil".localized)))
+                }
+
+                return
+            }
+
+            guard let decodedResponse: Team = self.decoder.decode(of: Team.self, data: data) else {
+                DispatchQueue.main.async {
+                    completion(.failure(MainError.responseError(message: "DecodingError:Text".localized)))
+                }
+
+                return
+            }
+
+            DispatchQueue.main.async {
+                completion(.success(decodedResponse))
+            }
+        }
+    }
     
 }

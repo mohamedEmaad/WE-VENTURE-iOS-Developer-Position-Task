@@ -76,7 +76,10 @@ extension PremierLeagueTeamsViewController: UICollectionViewDataSource, UICollec
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let team: Team = self.viewModel.getTeam(at: indexPath.row)
-        let teamInfoViewController: UIViewController = LeagueTeamInfoViewController(team: team)
+        let requestHandler: RequestHandler = RequestFetcher(headers: ["X-Auth-Token": .token])
+        let premierLeagueRepository: PremierLeagueRepository = PremierLeagueRepository(fetcher: requestHandler, decoder: Decoder())
+        let leagueTeamInfoViewModel: LeagueTeamInfoViewModeling = LeagueTeamInfoViewModel(team: team, repository: premierLeagueRepository)
+        let teamInfoViewController: UIViewController = LeagueTeamInfoViewController(viewModel: leagueTeamInfoViewModel)
         self.navigationController?.pushViewController(teamInfoViewController, animated: true)
     }
 
