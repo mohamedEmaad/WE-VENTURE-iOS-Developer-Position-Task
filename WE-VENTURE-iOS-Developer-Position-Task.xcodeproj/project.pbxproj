@@ -8,13 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		F9E67BB226AAD4F3002656CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E67BB126AAD4F3002656CF /* AppDelegate.swift */; };
-		F9E67BB426AAD4F3002656CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E67BB326AAD4F3002656CF /* SceneDelegate.swift */; };
 		F9E67BB626AAD4F3002656CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E67BB526AAD4F3002656CF /* ViewController.swift */; };
 		F9E67BB926AAD4F3002656CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E67BB726AAD4F3002656CF /* Main.storyboard */; };
 		F9E67BBB26AAD4F4002656CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E67BBA26AAD4F4002656CF /* Assets.xcassets */; };
 		F9E67BBE26AAD4F5002656CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E67BBC26AAD4F5002656CF /* LaunchScreen.storyboard */; };
 		F9E67BC926AAD4F5002656CF /* WE_VENTURE_iOS_Developer_Position_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E67BC826AAD4F5002656CF /* WE_VENTURE_iOS_Developer_Position_TaskTests.swift */; };
-		F9E67BD426AAD4F5002656CF /* WE_VENTURE_iOS_Developer_Position_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E67BD326AAD4F5002656CF /* WE_VENTURE_iOS_Developer_Position_TaskUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +35,6 @@
 /* Begin PBXFileReference section */
 		F9E67BAE26AAD4F3002656CF /* WE-VENTURE-iOS-Developer-Position-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WE-VENTURE-iOS-Developer-Position-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E67BB126AAD4F3002656CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F9E67BB326AAD4F3002656CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F9E67BB526AAD4F3002656CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F9E67BB826AAD4F3002656CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9E67BBA26AAD4F4002656CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,8 +44,6 @@
 		F9E67BC826AAD4F5002656CF /* WE_VENTURE_iOS_Developer_Position_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WE_VENTURE_iOS_Developer_Position_TaskTests.swift; sourceTree = "<group>"; };
 		F9E67BCA26AAD4F5002656CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9E67BCF26AAD4F5002656CF /* WE-VENTURE-iOS-Developer-Position-TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WE-VENTURE-iOS-Developer-Position-TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9E67BD326AAD4F5002656CF /* WE_VENTURE_iOS_Developer_Position_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WE_VENTURE_iOS_Developer_Position_TaskUITests.swift; sourceTree = "<group>"; };
-		F9E67BD526AAD4F5002656CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +76,6 @@
 			children = (
 				F9E67BB026AAD4F3002656CF /* WE-VENTURE-iOS-Developer-Position-Task */,
 				F9E67BC726AAD4F5002656CF /* WE-VENTURE-iOS-Developer-Position-TaskTests */,
-				F9E67BD226AAD4F5002656CF /* WE-VENTURE-iOS-Developer-Position-TaskUITests */,
 				F9E67BAF26AAD4F3002656CF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				F9E67BB126AAD4F3002656CF /* AppDelegate.swift */,
-				F9E67BB326AAD4F3002656CF /* SceneDelegate.swift */,
 				F9E67BB526AAD4F3002656CF /* ViewController.swift */,
 				F9E67BB726AAD4F3002656CF /* Main.storyboard */,
 				F9E67BBA26AAD4F4002656CF /* Assets.xcassets */,
@@ -117,15 +110,6 @@
 				F9E67BCA26AAD4F5002656CF /* Info.plist */,
 			);
 			path = "WE-VENTURE-iOS-Developer-Position-TaskTests";
-			sourceTree = "<group>";
-		};
-		F9E67BD226AAD4F5002656CF /* WE-VENTURE-iOS-Developer-Position-TaskUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F9E67BD326AAD4F5002656CF /* WE_VENTURE_iOS_Developer_Position_TaskUITests.swift */,
-				F9E67BD526AAD4F5002656CF /* Info.plist */,
-			);
-			path = "WE-VENTURE-iOS-Developer-Position-TaskUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +244,6 @@
 			files = (
 				F9E67BB626AAD4F3002656CF /* ViewController.swift in Sources */,
 				F9E67BB226AAD4F3002656CF /* AppDelegate.swift in Sources */,
-				F9E67BB426AAD4F3002656CF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +259,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9E67BD426AAD4F5002656CF /* WE_VENTURE_iOS_Developer_Position_TaskUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
