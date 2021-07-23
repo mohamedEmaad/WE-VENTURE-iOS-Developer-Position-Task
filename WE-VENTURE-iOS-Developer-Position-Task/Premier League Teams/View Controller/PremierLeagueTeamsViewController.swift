@@ -38,12 +38,17 @@ class PremierLeagueTeamsViewController: UIViewController {
         super.viewDidLoad()
         
         self.getPremierLeagueTeams()
-        self.setupCollectionView()
+        self.setupViews()
     }
 
     private func getPremierLeagueTeams() {
         self.loadingIndicator.startAnimating()
         self.viewModel.getPremierLeagueTeams()
+    }
+
+    private func setupViews() {
+        self.title = "PremierLeagueTeams:Title".localized
+        self.setupCollectionView()
     }
 
     private func setupCollectionView() {
@@ -70,7 +75,9 @@ extension PremierLeagueTeamsViewController: UICollectionViewDataSource, UICollec
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.navigationController?.pushViewController(UIViewController(), animated: true)
+        let team: Team = self.viewModel.getTeam(at: indexPath.row)
+        let teamInfoViewController: UIViewController = LeagueTeamInfoViewController(team: team)
+        self.navigationController?.pushViewController(teamInfoViewController, animated: true)
     }
 
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
