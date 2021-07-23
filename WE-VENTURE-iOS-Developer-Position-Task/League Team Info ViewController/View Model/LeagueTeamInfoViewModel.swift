@@ -20,7 +20,11 @@ final class LeagueTeamInfoViewModel: LeagueTeamInfoViewModeling {
         self.team.shortName ?? ""
     }
     var teamWebsiteLink: String {
-        self.team.website?.replacingOccurrences(of: "http", with: "https") ?? ""
+        if self.team.website?.contains("https") ?? true {
+            return self.team.website ?? ""
+        }
+        
+        return self.team.website?.replacingOccurrences(of: "http", with: "https") ?? ""
     }
     var teamSquadMembers: [Squad]? {
         self.team.squad
