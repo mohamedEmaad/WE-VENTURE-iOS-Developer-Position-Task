@@ -1,0 +1,10 @@
+
+
+"PremierLeagueTeams:Title" = "Premier League Teams";
+
+// errors
+"CallApi:InvalidUrl" = "Invalid Url";
+"ReturnedData:Nil" = "Invalid data";
+"DecodingError:Text" = "Something went wrong with the response, please try again";
+"ConnectionOffline:Error" = "Please check your connection to the internet";
+

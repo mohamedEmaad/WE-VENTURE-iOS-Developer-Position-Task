@@ -11,6 +11,7 @@
 		F908C85C26AB050900E151B5 /* Squad.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908C85B26AB050900E151B5 /* Squad.swift */; };
 		F908C86126AB05C200E151B5 /* SquadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908C85F26AB05C200E151B5 /* SquadTableViewCell.swift */; };
 		F908C86226AB05C200E151B5 /* SquadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F908C86026AB05C200E151B5 /* SquadTableViewCell.xib */; };
+		F908C86626AB0AA700E151B5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F908C86526AB0AA700E151B5 /* Localizable.strings */; };
 		F930D40526AAE355005262CA /* PremierLeagueTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F930D40326AAE355005262CA /* PremierLeagueTeamsViewController.swift */; };
 		F930D40626AAE355005262CA /* PremierLeagueTeamsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F930D40426AAE355005262CA /* PremierLeagueTeamsViewController.xib */; };
 		F930D40926AAE387005262CA /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F930D40826AAE387005262CA /* RootViewController.swift */; };
@@ -46,6 +47,7 @@
 		F908C85B26AB050900E151B5 /* Squad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Squad.swift; sourceTree = "<group>"; };
 		F908C85F26AB05C200E151B5 /* SquadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadTableViewCell.swift; sourceTree = "<group>"; };
 		F908C86026AB05C200E151B5 /* SquadTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SquadTableViewCell.xib; sourceTree = "<group>"; };
+		F908C86526AB0AA700E151B5 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		F930D40326AAE355005262CA /* PremierLeagueTeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremierLeagueTeamsViewController.swift; sourceTree = "<group>"; };
 		F930D40426AAE355005262CA /* PremierLeagueTeamsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PremierLeagueTeamsViewController.xib; sourceTree = "<group>"; };
 		F930D40826AAE387005262CA /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				F9E67BBC26AAD4F5002656CF /* LaunchScreen.storyboard */,
 				F9E67BBF26AAD4F5002656CF /* Info.plist */,
 				F930D40826AAE387005262CA /* RootViewController.swift */,
+				F908C86526AB0AA700E151B5 /* Localizable.strings */,
 			);
 			path = "WE-VENTURE-iOS-Developer-Position-Task";
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				F908C86226AB05C200E151B5 /* SquadTableViewCell.xib in Resources */,
 				F9E67BBE26AAD4F5002656CF /* LaunchScreen.storyboard in Resources */,
 				F930D41126AAE819005262CA /* PremierLeagueTeamCollectionViewCell.xib in Resources */,
+				F908C86626AB0AA700E151B5 /* Localizable.strings in Resources */,
 				F9E67BBB26AAD4F4002656CF /* Assets.xcassets in Resources */,
 				F930D40626AAE355005262CA /* PremierLeagueTeamsViewController.xib in Resources */,
 				F9577BB026AAFCE000564310 /* LeagueTeamInfoViewController.xib in Resources */,
