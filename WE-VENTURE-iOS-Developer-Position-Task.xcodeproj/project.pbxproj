@@ -8,60 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		F9E67BB226AAD4F3002656CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E67BB126AAD4F3002656CF /* AppDelegate.swift */; };
-		F9E67BB626AAD4F3002656CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E67BB526AAD4F3002656CF /* ViewController.swift */; };
 		F9E67BB926AAD4F3002656CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E67BB726AAD4F3002656CF /* Main.storyboard */; };
 		F9E67BBB26AAD4F4002656CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E67BBA26AAD4F4002656CF /* Assets.xcassets */; };
 		F9E67BBE26AAD4F5002656CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E67BBC26AAD4F5002656CF /* LaunchScreen.storyboard */; };
-		F9E67BC926AAD4F5002656CF /* WE_VENTURE_iOS_Developer_Position_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E67BC826AAD4F5002656CF /* WE_VENTURE_iOS_Developer_Position_TaskTests.swift */; };
+		F9E67C0926AAD9A2002656CF /* PremierLeagueTeamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E67C0826AAD9A2002656CF /* PremierLeagueTeamsViewModel.swift */; };
+		F9E67C0C26AAD9C0002656CF /* PremierLeagueTeamsViewModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E67C0B26AAD9C0002656CF /* PremierLeagueTeamsViewModeling.swift */; };
+		F9E67C1226AADB66002656CF /* PremierLeagueRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E67C1126AADB66002656CF /* PremierLeagueRepository.swift */; };
+		F9E67C2A26AADC85002656CF /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E67C2026AADC85002656CF /* RequestHandler.swift */; };
+		F9E67C2B26AADC85002656CF /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E67C2126AADC85002656CF /* RequestType.swift */; };
+		F9E67C2E26AADC85002656CF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E67C2526AADC85002656CF /* Extensions.swift */; };
+		F9E67C2F26AADC85002656CF /* ResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E67C2726AADC85002656CF /* ResponseDecoder.swift */; };
+		F9E67C3026AADC85002656CF /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E67C2926AADC85002656CF /* Error.swift */; };
+		F9E67C3526AADD4E002656CF /* RequestFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E67C3426AADD4E002656CF /* RequestFetcher.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F9E67BC526AAD4F5002656CF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F9E67BA626AAD4F3002656CF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F9E67BAD26AAD4F3002656CF;
-			remoteInfo = "WE-VENTURE-iOS-Developer-Position-Task";
-		};
-		F9E67BD026AAD4F5002656CF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F9E67BA626AAD4F3002656CF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F9E67BAD26AAD4F3002656CF;
-			remoteInfo = "WE-VENTURE-iOS-Developer-Position-Task";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F9E67BAE26AAD4F3002656CF /* WE-VENTURE-iOS-Developer-Position-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WE-VENTURE-iOS-Developer-Position-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E67BB126AAD4F3002656CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F9E67BB526AAD4F3002656CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F9E67BB826AAD4F3002656CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9E67BBA26AAD4F4002656CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9E67BBD26AAD4F5002656CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9E67BBF26AAD4F5002656CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F9E67BC426AAD4F5002656CF /* WE-VENTURE-iOS-Developer-Position-TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WE-VENTURE-iOS-Developer-Position-TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9E67BC826AAD4F5002656CF /* WE_VENTURE_iOS_Developer_Position_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WE_VENTURE_iOS_Developer_Position_TaskTests.swift; sourceTree = "<group>"; };
-		F9E67BCA26AAD4F5002656CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F9E67BCF26AAD4F5002656CF /* WE-VENTURE-iOS-Developer-Position-TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WE-VENTURE-iOS-Developer-Position-TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9E67C0826AAD9A2002656CF /* PremierLeagueTeamsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremierLeagueTeamsViewModel.swift; sourceTree = "<group>"; };
+		F9E67C0B26AAD9C0002656CF /* PremierLeagueTeamsViewModeling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremierLeagueTeamsViewModeling.swift; sourceTree = "<group>"; };
+		F9E67C1126AADB66002656CF /* PremierLeagueRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremierLeagueRepository.swift; sourceTree = "<group>"; };
+		F9E67C2026AADC85002656CF /* RequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
+		F9E67C2126AADC85002656CF /* RequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		F9E67C2526AADC85002656CF /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F9E67C2726AADC85002656CF /* ResponseDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseDecoder.swift; sourceTree = "<group>"; };
+		F9E67C2926AADC85002656CF /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		F9E67C3426AADD4E002656CF /* RequestFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F9E67BAB26AAD4F3002656CF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F9E67BC126AAD4F5002656CF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F9E67BCC26AAD4F5002656CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				F9E67BB026AAD4F3002656CF /* WE-VENTURE-iOS-Developer-Position-Task */,
-				F9E67BC726AAD4F5002656CF /* WE-VENTURE-iOS-Developer-Position-TaskTests */,
 				F9E67BAF26AAD4F3002656CF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,8 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				F9E67BAE26AAD4F3002656CF /* WE-VENTURE-iOS-Developer-Position-Task.app */,
-				F9E67BC426AAD4F5002656CF /* WE-VENTURE-iOS-Developer-Position-TaskTests.xctest */,
-				F9E67BCF26AAD4F5002656CF /* WE-VENTURE-iOS-Developer-Position-TaskUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,8 +70,10 @@
 		F9E67BB026AAD4F3002656CF /* WE-VENTURE-iOS-Developer-Position-Task */ = {
 			isa = PBXGroup;
 			children = (
+				F9E67C0626AAD96B002656CF /* Premier League Teams */,
+				F9E67C1026AADB54002656CF /* Repository */,
+				F9E67C1E26AADC85002656CF /* Utils */,
 				F9E67BB126AAD4F3002656CF /* AppDelegate.swift */,
-				F9E67BB526AAD4F3002656CF /* ViewController.swift */,
 				F9E67BB726AAD4F3002656CF /* Main.storyboard */,
 				F9E67BBA26AAD4F4002656CF /* Assets.xcassets */,
 				F9E67BBC26AAD4F5002656CF /* LaunchScreen.storyboard */,
@@ -103,13 +82,58 @@
 			path = "WE-VENTURE-iOS-Developer-Position-Task";
 			sourceTree = "<group>";
 		};
-		F9E67BC726AAD4F5002656CF /* WE-VENTURE-iOS-Developer-Position-TaskTests */ = {
+		F9E67C0626AAD96B002656CF /* Premier League Teams */ = {
 			isa = PBXGroup;
 			children = (
-				F9E67BC826AAD4F5002656CF /* WE_VENTURE_iOS_Developer_Position_TaskTests.swift */,
-				F9E67BCA26AAD4F5002656CF /* Info.plist */,
+				F9E67C0826AAD9A2002656CF /* PremierLeagueTeamsViewModel.swift */,
+				F9E67C0B26AAD9C0002656CF /* PremierLeagueTeamsViewModeling.swift */,
 			);
-			path = "WE-VENTURE-iOS-Developer-Position-TaskTests";
+			path = "Premier League Teams";
+			sourceTree = "<group>";
+		};
+		F9E67C1026AADB54002656CF /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F9E67C1126AADB66002656CF /* PremierLeagueRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F9E67C1E26AADC85002656CF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F9E67C1F26AADC85002656CF /* RequestHandler */,
+				F9E67C2526AADC85002656CF /* Extensions.swift */,
+				F9E67C2626AADC85002656CF /* Decoders */,
+				F9E67C2826AADC85002656CF /* Errors */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F9E67C1F26AADC85002656CF /* RequestHandler */ = {
+			isa = PBXGroup;
+			children = (
+				F9E67C2026AADC85002656CF /* RequestHandler.swift */,
+				F9E67C2126AADC85002656CF /* RequestType.swift */,
+				F9E67C3426AADD4E002656CF /* RequestFetcher.swift */,
+			);
+			path = RequestHandler;
+			sourceTree = "<group>";
+		};
+		F9E67C2626AADC85002656CF /* Decoders */ = {
+			isa = PBXGroup;
+			children = (
+				F9E67C2726AADC85002656CF /* ResponseDecoder.swift */,
+			);
+			path = Decoders;
+			sourceTree = "<group>";
+		};
+		F9E67C2826AADC85002656CF /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				F9E67C2926AADC85002656CF /* Error.swift */,
+			);
+			path = Errors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,42 +156,6 @@
 			productReference = F9E67BAE26AAD4F3002656CF /* WE-VENTURE-iOS-Developer-Position-Task.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F9E67BC326AAD4F5002656CF /* WE-VENTURE-iOS-Developer-Position-TaskTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F9E67BDB26AAD4F5002656CF /* Build configuration list for PBXNativeTarget "WE-VENTURE-iOS-Developer-Position-TaskTests" */;
-			buildPhases = (
-				F9E67BC026AAD4F5002656CF /* Sources */,
-				F9E67BC126AAD4F5002656CF /* Frameworks */,
-				F9E67BC226AAD4F5002656CF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F9E67BC626AAD4F5002656CF /* PBXTargetDependency */,
-			);
-			name = "WE-VENTURE-iOS-Developer-Position-TaskTests";
-			productName = "WE-VENTURE-iOS-Developer-Position-TaskTests";
-			productReference = F9E67BC426AAD4F5002656CF /* WE-VENTURE-iOS-Developer-Position-TaskTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		F9E67BCE26AAD4F5002656CF /* WE-VENTURE-iOS-Developer-Position-TaskUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F9E67BDE26AAD4F5002656CF /* Build configuration list for PBXNativeTarget "WE-VENTURE-iOS-Developer-Position-TaskUITests" */;
-			buildPhases = (
-				F9E67BCB26AAD4F5002656CF /* Sources */,
-				F9E67BCC26AAD4F5002656CF /* Frameworks */,
-				F9E67BCD26AAD4F5002656CF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F9E67BD126AAD4F5002656CF /* PBXTargetDependency */,
-			);
-			name = "WE-VENTURE-iOS-Developer-Position-TaskUITests";
-			productName = "WE-VENTURE-iOS-Developer-Position-TaskUITests";
-			productReference = F9E67BCF26AAD4F5002656CF /* WE-VENTURE-iOS-Developer-Position-TaskUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -179,14 +167,6 @@
 				TargetAttributes = {
 					F9E67BAD26AAD4F3002656CF = {
 						CreatedOnToolsVersion = 12.3;
-					};
-					F9E67BC326AAD4F5002656CF = {
-						CreatedOnToolsVersion = 12.3;
-						TestTargetID = F9E67BAD26AAD4F3002656CF;
-					};
-					F9E67BCE26AAD4F5002656CF = {
-						CreatedOnToolsVersion = 12.3;
-						TestTargetID = F9E67BAD26AAD4F3002656CF;
 					};
 				};
 			};
@@ -204,8 +184,6 @@
 			projectRoot = "";
 			targets = (
 				F9E67BAD26AAD4F3002656CF /* WE-VENTURE-iOS-Developer-Position-Task */,
-				F9E67BC326AAD4F5002656CF /* WE-VENTURE-iOS-Developer-Position-TaskTests */,
-				F9E67BCE26AAD4F5002656CF /* WE-VENTURE-iOS-Developer-Position-TaskUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -221,20 +199,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F9E67BC226AAD4F5002656CF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F9E67BCD26AAD4F5002656CF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -242,40 +206,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9E67BB626AAD4F3002656CF /* ViewController.swift in Sources */,
 				F9E67BB226AAD4F3002656CF /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F9E67BC026AAD4F5002656CF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F9E67BC926AAD4F5002656CF /* WE_VENTURE_iOS_Developer_Position_TaskTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F9E67BCB26AAD4F5002656CF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F9E67C2E26AADC85002656CF /* Extensions.swift in Sources */,
+				F9E67C2A26AADC85002656CF /* RequestHandler.swift in Sources */,
+				F9E67C3026AADC85002656CF /* Error.swift in Sources */,
+				F9E67C0926AAD9A2002656CF /* PremierLeagueTeamsViewModel.swift in Sources */,
+				F9E67C3526AADD4E002656CF /* RequestFetcher.swift in Sources */,
+				F9E67C0C26AAD9C0002656CF /* PremierLeagueTeamsViewModeling.swift in Sources */,
+				F9E67C1226AADB66002656CF /* PremierLeagueRepository.swift in Sources */,
+				F9E67C2F26AADC85002656CF /* ResponseDecoder.swift in Sources */,
+				F9E67C2B26AADC85002656CF /* RequestType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F9E67BC626AAD4F5002656CF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F9E67BAD26AAD4F3002656CF /* WE-VENTURE-iOS-Developer-Position-Task */;
-			targetProxy = F9E67BC526AAD4F5002656CF /* PBXContainerItemProxy */;
-		};
-		F9E67BD126AAD4F5002656CF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F9E67BAD26AAD4F3002656CF /* WE-VENTURE-iOS-Developer-Position-Task */;
-			targetProxy = F9E67BD026AAD4F5002656CF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F9E67BB726AAD4F3002656CF /* Main.storyboard */ = {
@@ -451,90 +395,6 @@
 			};
 			name = Release;
 		};
-		F9E67BDC26AAD4F5002656CF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CUR67WKD28;
-				INFOPLIST_FILE = "WE-VENTURE-iOS-Developer-Position-TaskTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "MohamedEmad.WE-VENTURE-iOS-Developer-Position-TaskTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WE-VENTURE-iOS-Developer-Position-Task.app/WE-VENTURE-iOS-Developer-Position-Task";
-			};
-			name = Debug;
-		};
-		F9E67BDD26AAD4F5002656CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CUR67WKD28;
-				INFOPLIST_FILE = "WE-VENTURE-iOS-Developer-Position-TaskTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "MohamedEmad.WE-VENTURE-iOS-Developer-Position-TaskTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WE-VENTURE-iOS-Developer-Position-Task.app/WE-VENTURE-iOS-Developer-Position-Task";
-			};
-			name = Release;
-		};
-		F9E67BDF26AAD4F5002656CF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CUR67WKD28;
-				INFOPLIST_FILE = "WE-VENTURE-iOS-Developer-Position-TaskUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "MohamedEmad.WE-VENTURE-iOS-Developer-Position-TaskUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "WE-VENTURE-iOS-Developer-Position-Task";
-			};
-			name = Debug;
-		};
-		F9E67BE026AAD4F5002656CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CUR67WKD28;
-				INFOPLIST_FILE = "WE-VENTURE-iOS-Developer-Position-TaskUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "MohamedEmad.WE-VENTURE-iOS-Developer-Position-TaskUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "WE-VENTURE-iOS-Developer-Position-Task";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -552,24 +412,6 @@
 			buildConfigurations = (
 				F9E67BD926AAD4F5002656CF /* Debug */,
 				F9E67BDA26AAD4F5002656CF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F9E67BDB26AAD4F5002656CF /* Build configuration list for PBXNativeTarget "WE-VENTURE-iOS-Developer-Position-TaskTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F9E67BDC26AAD4F5002656CF /* Debug */,
-				F9E67BDD26AAD4F5002656CF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F9E67BDE26AAD4F5002656CF /* Build configuration list for PBXNativeTarget "WE-VENTURE-iOS-Developer-Position-TaskUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F9E67BDF26AAD4F5002656CF /* Debug */,
-				F9E67BE026AAD4F5002656CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
