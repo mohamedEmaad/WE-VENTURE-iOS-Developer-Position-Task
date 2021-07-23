@@ -26,7 +26,7 @@ class LeagueTeamInfoViewController: UIViewController {
     private func listenViewModelResponse() {
         self.viewModel.onDataRecieved = { [weak self] in
             self?.loadingIndicator.stopAnimating()
-            self?.squadTableViewHeight.constant = CGFloat((self?.viewModel.team.squad?.count ?? 1) * 60)
+            self?.squadTableViewHeight.constant = CGFloat((self?.viewModel.teamSquadMembers?.count ?? 1) * 60)
             self?.view.layoutIfNeeded()
             self?.squadTableView.reloadData()
         }
@@ -47,11 +47,10 @@ class LeagueTeamInfoViewController: UIViewController {
     }
 
     private func setupView() {
-        let team: Team = self.viewModel.team
-        self.title = team.shortName
-        self.teamNameLabel.text = team.shortName
-        self.teamLinkButton.setTitle(team.website, for: .normal)
-        guard let url: URL = URL(string: team.crestUrl ?? "") else {
+        self.title = self.viewModel.teamName
+        self.teamNameLabel.text = self.viewModel.teamName
+        self.teamLinkButton.setTitle(self.viewModel.teamWebsiteLink, for: .normal)
+        guard let url: URL = URL(string: self.viewModel.teamImageUrl) else {
             return
         }
         self.teamFlagImageView.loadImage(url: url)
@@ -74,12 +73,18 @@ class LeagueTeamInfoViewController: UIViewController {
         self.viewModel.getLeagueTeamInfo()
     }
 
+    @IBAction func websiteButtonClicked(_ sender: Any) {
+        let teamWebsiteUrl: String = self.viewModel.teamWebsiteLink
+        let webViewViewController: UIViewController = LeagueTeamWebsiteViewController(url: teamWebsiteUrl)
+        self.navigationController?.pushViewController(webViewViewController, animated: true)
+    }
+
 }
 
 extension LeagueTeamInfoViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.viewModel.team.squad?.count ?? 0
+        return self.viewModel.teamSquadMembers?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

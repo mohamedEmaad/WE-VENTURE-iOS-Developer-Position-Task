@@ -52,6 +52,9 @@
                                             <state key="normal" title="Button">
                                                 <color key="titleColor" systemColor="linkColor"/>
                                             </state>
+                                            <connections>
+                                                <action selector="websiteButtonClicked:" destination="-1" eventType="touchUpInside" id="i3A-Y6-02W"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </stackView>

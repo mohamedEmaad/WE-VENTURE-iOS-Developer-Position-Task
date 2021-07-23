@@ -12,7 +12,21 @@ final class LeagueTeamInfoViewModel: LeagueTeamInfoViewModeling {
     var onDataRecieved: (() -> Void)?
 
     var onError: ((Error) -> Void)?
-    var team: Team
+
+    var teamImageUrl: String {
+        self.team.crestUrl ?? ""
+    }
+    var teamName: String {
+        self.team.shortName ?? ""
+    }
+    var teamWebsiteLink: String {
+        self.team.website?.replacingOccurrences(of: "http", with: "https") ?? ""
+    }
+    var teamSquadMembers: [Squad]? {
+        self.team.squad
+    }
+
+    private var team: Team
 
     private var keagueTeamInfoUrlExtension: String {
         "teams/\(self.team.id ?? 1)"
