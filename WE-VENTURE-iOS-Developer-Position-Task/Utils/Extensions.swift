@@ -11,14 +11,11 @@ import Foundation
 extension String {
 
     @inlinable static var baseUrl: Self {
-        "https://api.github.com/"
+        "https://api.football-data.org/v2/"
     }
 
-    var toDate: Date? {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        dateFormatter.timeZone = NSTimeZone(name: "UTC") as TimeZone?
-        return dateFormatter.date(from: self)
+    @inlinable static var token: Self {
+        "6653ab8b8a844fd8b2d879f21919e2d5"
     }
 
     var localized: String {

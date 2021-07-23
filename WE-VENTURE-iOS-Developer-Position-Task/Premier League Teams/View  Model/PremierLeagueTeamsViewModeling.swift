@@ -9,7 +9,7 @@ import Foundation
 
 protocol PremierLeagueTeamsViewModeling {
 
-    var onDataRecieved: ((Result<Any, Error>) -> Void)? { get set }
+    var onDataRecieved: ((Result<[Team], Error>) -> Void)? { get set }
 
     func getPremierLeagueTeams()
 
