@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PremierLeagueTeamCollectionViewCell" customModule="WE_VENTURE_iOS_Developer_Position_Task" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="468"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="388" height="468"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ESF-ni-qbL">
+                        <rect key="frame" x="5" y="187.5" width="378" height="137.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="egypt_flag" translatesAutoresizingMaskIntoConstraints="NO" id="NM0-gk-L2a" customClass="CircleAvatarImageView" customModule="WE_VENTURE_iOS_Developer_Position_Task" customModuleProvider="target">
+                                <rect key="frame" x="154" y="15" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NM0-gk-L2a" secondAttribute="height" multiplier="1:1" id="FvX-SE-0UX"/>
+                                    <constraint firstAttribute="width" constant="70" id="nRg-5J-Cgf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIx-cr-EBN">
+                                <rect key="frame" x="0.0" y="95" width="378" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GIx-cr-EBN" firstAttribute="leading" secondItem="ESF-ni-qbL" secondAttribute="leading" id="4VJ-n0-8tY"/>
+                            <constraint firstItem="GIx-cr-EBN" firstAttribute="top" secondItem="NM0-gk-L2a" secondAttribute="bottom" constant="10" id="9vp-uh-dnk"/>
+                            <constraint firstAttribute="trailing" secondItem="GIx-cr-EBN" secondAttribute="trailing" id="cub-a2-C78"/>
+                            <constraint firstItem="NM0-gk-L2a" firstAttribute="centerX" secondItem="ESF-ni-qbL" secondAttribute="centerX" id="jh2-Ml-HmQ"/>
+                            <constraint firstAttribute="bottom" secondItem="GIx-cr-EBN" secondAttribute="bottom" constant="15" id="vda-e0-oAj"/>
+                            <constraint firstItem="NM0-gk-L2a" firstAttribute="top" secondItem="ESF-ni-qbL" secondAttribute="top" constant="15" id="vf1-Qe-FRE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ESF-ni-qbL" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="5" id="Cqc-F9-A4p"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="ESF-ni-qbL" secondAttribute="trailing" constant="5" id="KiI-Bw-GLK"/>
+                <constraint firstItem="ESF-ni-qbL" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="ltj-g8-cr8"/>
+            </constraints>
+            <size key="customSize" width="388" height="468"/>
+            <connections>
+                <outlet property="cellBackgroundView" destination="ESF-ni-qbL" id="91P-ND-mNr"/>
+                <outlet property="teamFlagImage" destination="NM0-gk-L2a" id="vr1-bi-bBv"/>
+                <outlet property="teamNameLabel" destination="GIx-cr-EBN" id="uf9-3Z-D9R"/>
+            </connections>
+            <point key="canvasLocation" x="31.884057971014496" y="4.6875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="egypt_flag" width="1280" height="853"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

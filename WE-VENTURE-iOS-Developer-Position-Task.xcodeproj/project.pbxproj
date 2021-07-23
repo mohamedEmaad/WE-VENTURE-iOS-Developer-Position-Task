@@ -10,6 +10,10 @@
 		F930D40526AAE355005262CA /* PremierLeagueTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F930D40326AAE355005262CA /* PremierLeagueTeamsViewController.swift */; };
 		F930D40626AAE355005262CA /* PremierLeagueTeamsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F930D40426AAE355005262CA /* PremierLeagueTeamsViewController.xib */; };
 		F930D40926AAE387005262CA /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F930D40826AAE387005262CA /* RootViewController.swift */; };
+		F930D41026AAE819005262CA /* PremierLeagueTeamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F930D40E26AAE819005262CA /* PremierLeagueTeamCollectionViewCell.swift */; };
+		F930D41126AAE819005262CA /* PremierLeagueTeamCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F930D40F26AAE819005262CA /* PremierLeagueTeamCollectionViewCell.xib */; };
+		F930D41526AAEA46005262CA /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F930D41426AAEA46005262CA /* UIExtensions.swift */; };
+		F930D41A26AAEC7A005262CA /* CircleAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F930D41926AAEC7A005262CA /* CircleAvatarImageView.swift */; };
 		F9E67BB226AAD4F3002656CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E67BB126AAD4F3002656CF /* AppDelegate.swift */; };
 		F9E67BBB26AAD4F4002656CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E67BBA26AAD4F4002656CF /* Assets.xcassets */; };
 		F9E67BBE26AAD4F5002656CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E67BBC26AAD4F5002656CF /* LaunchScreen.storyboard */; };
@@ -31,6 +35,10 @@
 		F930D40326AAE355005262CA /* PremierLeagueTeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremierLeagueTeamsViewController.swift; sourceTree = "<group>"; };
 		F930D40426AAE355005262CA /* PremierLeagueTeamsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PremierLeagueTeamsViewController.xib; sourceTree = "<group>"; };
 		F930D40826AAE387005262CA /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		F930D40E26AAE819005262CA /* PremierLeagueTeamCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremierLeagueTeamCollectionViewCell.swift; sourceTree = "<group>"; };
+		F930D40F26AAE819005262CA /* PremierLeagueTeamCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PremierLeagueTeamCollectionViewCell.xib; sourceTree = "<group>"; };
+		F930D41426AAEA46005262CA /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
+		F930D41926AAEC7A005262CA /* CircleAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleAvatarImageView.swift; sourceTree = "<group>"; };
 		F9E67BAE26AAD4F3002656CF /* WE-VENTURE-iOS-Developer-Position-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WE-VENTURE-iOS-Developer-Position-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E67BB126AAD4F3002656CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9E67BBA26AAD4F4002656CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,6 +78,24 @@
 			path = "View Controller";
 			sourceTree = "<group>";
 		};
+		F930D40D26AAE7D7005262CA /* UICollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F930D40E26AAE819005262CA /* PremierLeagueTeamCollectionViewCell.swift */,
+				F930D40F26AAE819005262CA /* PremierLeagueTeamCollectionViewCell.xib */,
+			);
+			path = UICollectionViewCell;
+			sourceTree = "<group>";
+		};
+		F930D41326AAEA3A005262CA /* UIExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				F930D41426AAEA46005262CA /* UIExtensions.swift */,
+				F930D41926AAEC7A005262CA /* CircleAvatarImageView.swift */,
+			);
+			path = UIExtensions;
+			sourceTree = "<group>";
+		};
 		F9E67BA526AAD4F3002656CF = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +130,7 @@
 		F9E67C0626AAD96B002656CF /* Premier League Teams */ = {
 			isa = PBXGroup;
 			children = (
+				F930D40D26AAE7D7005262CA /* UICollectionViewCell */,
 				F930D40126AAE321005262CA /* View Controller */,
 				F9E67C4E26AAE22F002656CF /* View  Model */,
 				F9E67C3D26AAE066002656CF /* Response */,
@@ -122,6 +149,7 @@
 		F9E67C1E26AADC85002656CF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F930D41326AAEA3A005262CA /* UIExtensions */,
 				F9E67C1F26AADC85002656CF /* RequestHandler */,
 				F9E67C2526AADC85002656CF /* Extensions.swift */,
 				F9E67C2626AADC85002656CF /* Decoders */,
@@ -233,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9E67BBE26AAD4F5002656CF /* LaunchScreen.storyboard in Resources */,
+				F930D41126AAE819005262CA /* PremierLeagueTeamCollectionViewCell.xib in Resources */,
 				F9E67BBB26AAD4F4002656CF /* Assets.xcassets in Resources */,
 				F930D40626AAE355005262CA /* PremierLeagueTeamsViewController.xib in Resources */,
 			);
@@ -252,9 +281,12 @@
 				F9E67C3026AADC85002656CF /* Error.swift in Sources */,
 				F930D40526AAE355005262CA /* PremierLeagueTeamsViewController.swift in Sources */,
 				F9E67C0926AAD9A2002656CF /* PremierLeagueTeamsViewModel.swift in Sources */,
+				F930D41A26AAEC7A005262CA /* CircleAvatarImageView.swift in Sources */,
 				F9E67C3526AADD4E002656CF /* RequestFetcher.swift in Sources */,
 				F9E67C0C26AAD9C0002656CF /* PremierLeagueTeamsViewModeling.swift in Sources */,
+				F930D41026AAE819005262CA /* PremierLeagueTeamCollectionViewCell.swift in Sources */,
 				F9E67C1226AADB66002656CF /* PremierLeagueRepository.swift in Sources */,
+				F930D41526AAEA46005262CA /* UIExtensions.swift in Sources */,
 				F930D40926AAE387005262CA /* RootViewController.swift in Sources */,
 				F9E67C2F26AADC85002656CF /* ResponseDecoder.swift in Sources */,
 				F9E67C3A26AADDB7002656CF /* Decoder.swift in Sources */,
