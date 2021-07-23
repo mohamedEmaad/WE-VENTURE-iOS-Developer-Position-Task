@@ -83,8 +83,7 @@ extension PremierLeagueTeamsViewController: UICollectionViewDataSource, UICollec
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cellWidth: CGFloat = (self.view.frame.width / 2) - 12
-        let cellHeight: CGFloat = cellWidth - 30
-        return CGSize(width: cellWidth, height: cellHeight)
+        return CGSize(width: cellWidth, height: 152)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

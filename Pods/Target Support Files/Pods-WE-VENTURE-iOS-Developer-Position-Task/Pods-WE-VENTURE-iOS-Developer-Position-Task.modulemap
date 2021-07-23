@@ -1,0 +1,6 @@
+framework module Pods_WE_VENTURE_iOS_Developer_Position_Task {
+  umbrella header "Pods-WE-VENTURE-iOS-Developer-Position-Task-umbrella.h"
+
+  export *
+  module * { export * }
+}

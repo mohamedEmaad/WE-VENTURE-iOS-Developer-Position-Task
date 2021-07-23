@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1C842E2E7A32FC3B0D93F3B /* Pods_WE_VENTURE_iOS_Developer_Position_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35108F72601E76934338587C /* Pods_WE_VENTURE_iOS_Developer_Position_Task.framework */; };
 		F930D40526AAE355005262CA /* PremierLeagueTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F930D40326AAE355005262CA /* PremierLeagueTeamsViewController.swift */; };
 		F930D40626AAE355005262CA /* PremierLeagueTeamsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F930D40426AAE355005262CA /* PremierLeagueTeamsViewController.xib */; };
 		F930D40926AAE387005262CA /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F930D40826AAE387005262CA /* RootViewController.swift */; };
@@ -32,6 +33,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35108F72601E76934338587C /* Pods_WE_VENTURE_iOS_Developer_Position_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WE_VENTURE_iOS_Developer_Position_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F9C98CA303E8586DC578A73 /* Pods-WE-VENTURE-iOS-Developer-Position-Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WE-VENTURE-iOS-Developer-Position-Task.release.xcconfig"; path = "Target Support Files/Pods-WE-VENTURE-iOS-Developer-Position-Task/Pods-WE-VENTURE-iOS-Developer-Position-Task.release.xcconfig"; sourceTree = "<group>"; };
+		E8E7512D382F88DE26FD5FF8 /* Pods-WE-VENTURE-iOS-Developer-Position-Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WE-VENTURE-iOS-Developer-Position-Task.debug.xcconfig"; path = "Target Support Files/Pods-WE-VENTURE-iOS-Developer-Position-Task/Pods-WE-VENTURE-iOS-Developer-Position-Task.debug.xcconfig"; sourceTree = "<group>"; };
 		F930D40326AAE355005262CA /* PremierLeagueTeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremierLeagueTeamsViewController.swift; sourceTree = "<group>"; };
 		F930D40426AAE355005262CA /* PremierLeagueTeamsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PremierLeagueTeamsViewController.xib; sourceTree = "<group>"; };
 		F930D40826AAE387005262CA /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -63,12 +67,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1C842E2E7A32FC3B0D93F3B /* Pods_WE_VENTURE_iOS_Developer_Position_Task.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49D2233F235BCC78D90FFFC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8E7512D382F88DE26FD5FF8 /* Pods-WE-VENTURE-iOS-Developer-Position-Task.debug.xcconfig */,
+				6F9C98CA303E8586DC578A73 /* Pods-WE-VENTURE-iOS-Developer-Position-Task.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		62306B9C28317741EED4982B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35108F72601E76934338587C /* Pods_WE_VENTURE_iOS_Developer_Position_Task.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F930D40126AAE321005262CA /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +124,8 @@
 			children = (
 				F9E67BB026AAD4F3002656CF /* WE-VENTURE-iOS-Developer-Position-Task */,
 				F9E67BAF26AAD4F3002656CF /* Products */,
+				49D2233F235BCC78D90FFFC1 /* Pods */,
+				62306B9C28317741EED4982B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -210,9 +235,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9E67BD826AAD4F5002656CF /* Build configuration list for PBXNativeTarget "WE-VENTURE-iOS-Developer-Position-Task" */;
 			buildPhases = (
+				5911C7209D6F0C94FC6A071E /* [CP] Check Pods Manifest.lock */,
 				F9E67BAA26AAD4F3002656CF /* Sources */,
 				F9E67BAB26AAD4F3002656CF /* Frameworks */,
 				F9E67BAC26AAD4F3002656CF /* Resources */,
+				4AE13A8D2D979D8FF0AF27CC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -268,6 +295,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4AE13A8D2D979D8FF0AF27CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WE-VENTURE-iOS-Developer-Position-Task/Pods-WE-VENTURE-iOS-Developer-Position-Task-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WE-VENTURE-iOS-Developer-Position-Task/Pods-WE-VENTURE-iOS-Developer-Position-Task-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WE-VENTURE-iOS-Developer-Position-Task/Pods-WE-VENTURE-iOS-Developer-Position-Task-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5911C7209D6F0C94FC6A071E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WE-VENTURE-iOS-Developer-Position-Task-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F9E67BAA26AAD4F3002656CF /* Sources */ = {
@@ -427,6 +496,7 @@
 		};
 		F9E67BD926AAD4F5002656CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8E7512D382F88DE26FD5FF8 /* Pods-WE-VENTURE-iOS-Developer-Position-Task.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -446,6 +516,7 @@
 		};
 		F9E67BDA26AAD4F5002656CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F9C98CA303E8586DC578A73 /* Pods-WE-VENTURE-iOS-Developer-Position-Task.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

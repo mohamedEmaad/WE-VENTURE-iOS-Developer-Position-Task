@@ -31,6 +31,10 @@ class PremierLeagueTeamCollectionViewCell: UICollectionViewCell {
 
     func configure(team: Team) {
         self.teamNameLabel.text = team.shortName
+        guard let url: URL = URL(string: team.crestUrl ?? "") else {
+            return
+        }
+        self.teamFlagImage.loadImage(url: url)
     }
 
 }
